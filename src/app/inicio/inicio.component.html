@@ -1,0 +1,18 @@
+
+<div class="containter ">
+  
+<div class="card " style="width: 18rem;" *ngFor="let pizza of comida, index as i" >
+  <img class="card-img-top" src="{{pizza.img}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{pizza.nombre}}</h5>
+    <p class="card-text">{{pizza.ingredientes}}</p>
+    <a [routerLink]="['/pizzas', i]" class="btn btn-primary">Ver más</a>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
